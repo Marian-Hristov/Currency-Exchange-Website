@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Exchange Rate</title>
+	<link rel="stylesheet" href="../css/table.css">
+	<link rel="stylesheet" href="../css/form.css">
+	<link rel="stylesheet" href="../css/page.css">
+	<script src="../js/eventListeners.js" defer></script>
+	<script src="../js/utilities.js" defer></script>
+	<script src="../js/loadCurrency.js" defer></script>
+	<script src="../js/main.js" defer></script>
+</head>
+
+<body>
+	<section id='main_container'>
+		<header>
+			<h2> Currency Exchange Live Calculator </h2>
+			<p> 420-320 Assignment 2 </p>
+		</header>
+		<section id='middle-section'>
+			<section id='top-section'>
+				<form action="" method="get">
+					<fieldset>
+						<legend>Fill In All Required Fields</legend>
+						<section id="currencies-selection">
+							<section class='form-row'>
+								<label for="base_currency_select_input">Base Currency</label>
+								<input list="base_currency_selection" id="base_currency_select_input">
+								<datalist id="base_currency_selection">
+								</datalist>
+							</section>
+							<section class='form-row'>
+								<label for="to_currency_select_input">To Currency</label>
+								<input list="to_currency_select" id="to_currency_select_input">
+								<datalist id="to_currency_select">
+								</datalist>
+							</section>
+							<section class='form-row'>
+								<label for="amount">Amount</label>
+								<input type="number" name="amount" id="amount" min=1.00 max=999999999999.99>
+							</section>
+						</section>
+						<section id="convertion-buttons">
+							<section class='form-btn-row'>
+								<input type="button" id='get_data_btn' value="Convert">
+								<input type='button' id='read_storge_btn' value='Show History'>
+								<input type='button' id='clear_storge_btn' value='Clear History'>
+							</section>
+						</section>
+					</fieldset>
+				</form>
+			</section>
+			<section id='main-section'>
+				<table>
+					<thead>
+						<tr>
+							<th>From</th>
+							<th>To</th>
+							<th>Rate</th>
+							<th>Amount</th>
+							<th>Payment</th>
+							<th>Date</th>
+						</tr>
+					</thead>
+				</table>
+			</section>
+		</section>
+		<footer>
+			<p>
+				Marian, Hristov, 2033348, Section 01, Copyright Fall 2021
+			</p>
+		</footer>
+	</section>
+</body>
+
+</html>

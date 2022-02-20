@@ -1,0 +1,85 @@
+form {
+    background: white;
+    padding: 1rem;
+    padding-top: 0.5rem;
+    border-radius: 0.7rem;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px,
+        rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+fieldset {
+    padding: 1rem;
+    padding-bottom: 0.5em;
+    border: 2px solid #0A146E;
+    border-radius: 0.7rem;
+}
+
+form legend {
+    padding: 0 1rem;
+    background: white;
+    font-size: 1.25rem;
+}
+
+#currencies-selection {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0.5rem 0 0.5rem 0;
+    flex-wrap: wrap;
+    max-width: 100%;
+}
+
+#currencies-selection .form-row {
+    margin: 1rem 1.5rem;
+    margin-top: 0;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    background: white;
+}
+
+#currencies-selection .form-row label {
+    text-indent: 10px;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding-bottom: 5px;
+}
+
+#currencies-selection input {
+    padding: 0.9rem;
+    font-size: 1.1rem;
+    background: #e9e9ed;
+    border-radius: 10px;
+    border: 1px solid #988B8C;
+}
+
+#convertion-buttons {
+    margin-top: 1rem;
+}
+
+#convertion-buttons section {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 1rem auto;
+}
+
+#convertion-buttons section input {
+    background: #0561AE;
+    color: white;
+    font-weight: bold;
+    border: 1px solid darkgray;
+    border-radius: 5px;
+    padding: 0.75rem 2rem;
+    min-width: 20%;
+    margin: 1rem 1.5rem;
+    margin-top: 0;
+    word-wrap: break-word;
+    font-size: 1.2rem;
+    transition: 0.15s ease-in-out;
+    flex-grow: 1;
+}
+
+#convertion-buttons section input:hover {
+    background: white;
+    color: #0561AE;
+}
